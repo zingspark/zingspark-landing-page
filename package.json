@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:docs": "next build && node scripts/copy-out-to-docs.mjs",
     "start": "next start",
     "lint": "biome check .",
     "lint:write": "biome check --write .",
