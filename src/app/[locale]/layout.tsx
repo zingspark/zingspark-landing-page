@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/config/site-config";
-import { cn } from "@/lib/utils";
 import { JsonLd } from "@/components/json-ld";
-import "@/app/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -77,17 +72,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <head>
-        <JsonLd locale={locale} />
-      </head>
-      <body className={cn(inter.className, "antialiased")} suppressHydrationWarning>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <NextIntlClientProvider messages={messages}>
-            <main className="flex min-h-screen flex-col">{children}</main>
-          </NextIntlClientProvider>
-        </ThemeProvider>
-      </body>
-    </html>
+    <>
+      <JsonLd locale={locale} />
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <NextIntlClientProvider messages={messages}>
+          <main className="flex min-h-screen flex-col">{children}</main>
+        </NextIntlClientProvider>
+      </ThemeProvider>
+    </>
   );
 }
