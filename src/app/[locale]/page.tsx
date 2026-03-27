@@ -1,9 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
-import SiteHeader from "@/components/site-header";
 import { HeroSection } from "@/components/hero-section";
-import { UniversityMarquee } from "@/components/university-marquee";
-import { RecruitmentSection } from "@/components/recruitment-section";
-import SiteFooter from "@/components/site-footer";
+import SiteHeader from "@/components/site-header";
+import { LazySections } from "@/components/lazy-sections";
 
 export default async function Home({
   params,
@@ -17,9 +15,7 @@ export default async function Home({
     <>
       <SiteHeader />
       <HeroSection />
-      <UniversityMarquee />
-      <RecruitmentSection />
-      <SiteFooter />
+      <LazySections />
     </>
   );
 }

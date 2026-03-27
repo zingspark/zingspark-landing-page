@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/routing";
+import { usePathname, useRouter } from "@/i18n/routing";
 import { Icons } from "./icons";
 
 export function LanguageToggle() {
@@ -17,10 +17,10 @@ export function LanguageToggle() {
   return (
     <button
       onClick={switchLocale}
-      className="flex items-center justify-center gap-1 h-8 px-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors text-xs font-medium cursor-pointer"
+      className="flex h-8 cursor-pointer items-center justify-center gap-1 rounded-lg px-2 font-medium text-muted-foreground text-xs transition-colors hover:bg-secondary hover:text-foreground"
       aria-label="Switch language"
     >
-      <Icons.globe className="w-3.5 h-3.5" />
+      <Icons.globe className="h-3.5 w-3.5" />
       <span>{locale === "zh" ? "EN" : "中"}</span>
     </button>
   );

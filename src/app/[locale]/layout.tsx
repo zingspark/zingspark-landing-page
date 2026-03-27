@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { ThemeProvider } from "next-themes";
-import { routing } from "@/i18n/routing";
-import { siteConfig } from "@/config/site-config";
+import type { ReactNode } from "react";
 import { JsonLd } from "@/components/json-ld";
+import { siteConfig } from "@/config/site-config";
+import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -17,43 +21,42 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isZh = locale === "zh";
+  const t = await getTranslations({ locale, namespace: "Meta" });
+
+  const title = t("title");
+  const description = t("description");
+  const ogLocale = locale === "zh" ? "zh_CN" : "en_US";
+  const siteName = locale === "zh" ? siteConfig.name.zh : siteConfig.name.en;
 
   return {
-    title: isZh
-      ? "星跃智启 Zingspark — 智启未来，跃见无限可能"
-      : "Zingspark — Ignite Intelligence. Spark the Future.",
-    description: isZh
-      ? "星跃智启深耕智能技术的原生研发与场景落地，以 AI 之力，点亮每一次数字跃迁，开启全新的智能纪元。"
-      : "Zingspark pioneers native AI R&D and real-world deployment, illuminating every digital leap into a new era of intelligence.",
+    title,
+    description,
     metadataBase: new URL(siteConfig.url),
     alternates: {
-      canonical: "/",
+      canonical: `/${locale}`,
       languages: { "zh-CN": "/zh", en: "/en" },
     },
     openGraph: {
       type: "website",
-      url: siteConfig.url,
-      title: isZh ? "星跃智启 Zingspark" : "Zingspark",
-      description: isZh
-        ? "智启未来，跃见无限可能"
-        : "Ignite Intelligence. Spark the Future.",
-      siteName: isZh ? "星跃智启" : "Zingspark",
+      url: `${siteConfig.url}/${locale}`,
+      title,
+      description,
+      siteName,
+      locale: ogLocale,
       images: [
         {
           url: siteConfig.openGraph.imageUrl,
           width: siteConfig.openGraph.imageWidth,
           height: siteConfig.openGraph.imageHeight,
-          alt: "Zingspark",
+          alt: siteName,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: isZh ? "星跃智启 Zingspark" : "Zingspark",
-      description: isZh
-        ? "智启未来，跃见无限可能"
-        : "Ignite Intelligence. Spark the Future.",
+      title,
+      description,
+      images: [siteConfig.openGraph.imageUrl],
     },
     robots: { index: true, follow: true },
     icons: { icon: "/images/logo/zingspark_Icon_FullColor.svg" },

@@ -1,22 +1,52 @@
 {
   "Meta": {
-    "title": "Zingspark — Ignite Intelligence. Spark the Future.",
-    "description": "Zingspark pioneers native AI R&D and real-world deployment, illuminating every digital leap into a new era of intelligence."
+    "title": "Zingspark — Native AI Agent R&D & Cross-Domain Deployment",
+    "description": "Zingspark is a Frontier Lab dedicated to building universal agents that break the boundaries between the physical and digital worlds."
   },
   "Header": {
     "about": "About",
+    "vision": "Vision",
+    "capabilities": "Capabilities",
     "team": "Team",
+    "jobs": "Positions",
     "join": "Join Us"
   },
   "Hero": {
-    "line1": "Ignite Intelligence.",
-    "line2": "Spark the Future.",
-    "description": "Pioneering native AI R&D and real-world deployment — illuminating every digital leap into a new era of intelligence.",
+    "line1": "Native AI Agents.",
+    "line2": "Redefining Intelligence.",
+    "description": "LLMs are just the brain. Agents give AI eyes, limbs, and the power to act.",
     "cta": "Join Us",
     "scrollDown": "Scroll to explore"
   },
+  "Vision": {
+    "tagline": "Empowering Paradigm Shifts with Native AI.",
+    "subtitle": "Native Intelligence. Leaping into the Future.",
+    "description": "As a Frontier Lab, Zingspark is dedicated to building universal agents that break the boundaries between the physical and digital worlds."
+  },
+  "Capabilities": {
+    "title": "Core Competencies",
+    "items": {
+      "framework": {
+        "title": "Deep Framework Deconstruction",
+        "description": "Deep expertise in leading multi-agent frameworks like OpenClaw, MetaGPT, and CrawlAI. Active contributors to top-tier Agent open-source projects."
+      },
+      "hardware": {
+        "title": "Software-Hardware Synergy",
+        "description": "Capability to extend from digital systems to physical hardware ecosystems, developing Agents with real-world interaction abilities."
+      },
+      "global": {
+        "title": "Global Reach",
+        "description": "Professional English communication skills and a tech stack synchronized with the international frontier in real-time."
+      }
+    }
+  },
   "Universities": {
-    "title": "Founded by Minds from World-Class Institutions"
+    "title": "A Group of Geeks, with the World's Brightest Minds"
+  },
+  "Jobs": {
+    "title": "Open Positions",
+    "subtitle": "Find your role in shaping the future of AI Agents.",
+    "clickHint": "Click a role to apply"
   },
   "Recruitment": {
     "title": "Join the Spark",
@@ -45,7 +75,10 @@
     "company": "Zingspark (Shanghai) Tech Co., Ltd.",
     "offices": "Beijing · Shanghai · Shenzhen",
     "copyright": "© 2026 Zingspark. All rights reserved.",
-    "slogan": "Ignite Intelligence. Spark the Future."
+    "slogan": "Native AI Agents. Redefining Intelligence.",
+    "email": "hi@zingspark.tech",
+    "icp": "沪ICP备2026010157号",
+    "police": "沪公网安备xxxxxxxxxx号"
   },
   "Theme": {
     "light": "Light",

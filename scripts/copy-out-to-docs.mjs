@@ -1,5 +1,5 @@
-import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
@@ -17,4 +17,3 @@ await rm(docsDir, { recursive: true, force: true });
 await mkdir(docsDir, { recursive: true });
 await cp(outDir, docsDir, { recursive: true });
 await writeFile(path.join(docsDir, ".nojekyll"), "");
-

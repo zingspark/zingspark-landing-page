@@ -13,19 +13,19 @@ export function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return <div className="w-8 h-8" />;
+    return <div className="h-8 w-8" />;
   }
 
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="flex items-center justify-center w-8 h-8 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors cursor-pointer"
+      className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
       aria-label="Toggle theme"
     >
       {theme === "dark" ? (
-        <Icons.sun className="w-4 h-4" />
+        <Icons.sun className="h-4 w-4" />
       ) : (
-        <Icons.moon className="w-4 h-4" />
+        <Icons.moon className="h-4 w-4" />
       )}
     </button>
   );

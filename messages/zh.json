@@ -1,22 +1,52 @@
 {
   "Meta": {
-    "title": "星跃智启 Zingspark — 智启未来，跃见无限可能",
-    "description": "星跃智启深耕智能技术的原生研发与场景落地，以 AI 之力，点亮每一次数字跃迁，开启全新的智能纪元。"
+    "title": "星跃智启 Zingspark — 原生 AI Agent 研发与跨领域场景落地",
+    "description": "星跃智启是一家前沿实验室，致力于构建打破物理与数字世界边界的通用智能体。"
   },
   "Header": {
     "about": "关于我们",
+    "vision": "愿景",
+    "capabilities": "能力",
     "team": "团队",
+    "jobs": "岗位",
     "join": "加入我们"
   },
   "Hero": {
-    "line1": "智启未来",
-    "line2": "跃见无限可能",
-    "description": "深耕智能技术的原生研发与场景落地，以 AI 之力，点亮每一次数字跃迁，开启全新的智能纪元。",
+    "line1": "原生 AI Agent",
+    "line2": "重新定义智能",
+    "description": "大语言模型只是大脑，Agent 才是赋予 AI 视觉、四肢与执行力的关键。",
     "cta": "加入我们",
     "scrollDown": "向下滚动探索"
   },
+  "Vision": {
+    "tagline": "以原生 AI 驱动范式跃迁",
+    "subtitle": "原生智能，跃迁未来",
+    "description": "作为一家前沿实验室，星跃智启致力于构建打破物理与数字世界边界的通用智能体。"
+  },
+  "Capabilities": {
+    "title": "核心能力",
+    "items": {
+      "framework": {
+        "title": "深度框架解构",
+        "description": "深度解构 OpenClaw、MetaGPT、CrawlAI 等主流多智能体框架，作为顶级 Agent 开源项目的活跃贡献者。"
+      },
+      "hardware": {
+        "title": "软硬件协同",
+        "description": "具备从数字系统走向实体硬件生态的能力，开发具有真实世界交互能力的 Agent。"
+      },
+      "global": {
+        "title": "全球化能力",
+        "description": "具备英文专业沟通能力，技术栈与国际前沿实时同步。"
+      }
+    }
+  },
   "Universities": {
-    "title": "创始团队来自全球顶尖学府"
+    "title": "一群极客，和全球最顶尖的大脑"
+  },
+  "Jobs": {
+    "title": "开放岗位",
+    "subtitle": "在 AI Agent 的未来中找到你的角色",
+    "clickHint": "点击岗位即可申请"
   },
   "Recruitment": {
     "title": "加入星跃",
@@ -45,7 +75,10 @@
     "company": "星跃智启（上海）科技有限公司",
     "offices": "北京 · 上海 · 深圳",
     "copyright": "© 2026 星跃智启 版权所有",
-    "slogan": "智启未来，跃见无限可能"
+    "slogan": "原生 AI Agent，重新定义智能",
+    "email": "hi@zingspark.tech",
+    "icp": "沪ICP备2026010157号",
+    "police": "沪公网安备xxxxxxxxxx号"
   },
   "Theme": {
     "light": "浅色",

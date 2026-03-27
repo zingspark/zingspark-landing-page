@@ -1,11 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "./theme-toggle";
 import { LanguageToggle } from "./language-toggle";
+import { ThemeToggle } from "./theme-toggle";
 
 export default function SiteHeader() {
   const t = useTranslations("Header");
@@ -13,35 +13,38 @@ export default function SiteHeader() {
 
   const navItems = [
     { label: t("about"), href: "#about" },
+    { label: t("vision"), href: "#vision" },
+    { label: t("capabilities"), href: "#capabilities" },
     { label: t("team"), href: "#team" },
+    { label: t("jobs"), href: "#jobs" },
     { label: t("join"), href: "#join" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="fixed top-0 right-0 left-0 z-50">
       <div className="container py-4">
-        <div className="mx-auto flex max-w-4xl items-center justify-between rounded-2xl border border-border/50 bg-background/70 backdrop-blur-xl px-4 py-2.5 shadow-lg shadow-black/[0.03]">
+        <div className="mx-auto flex max-w-4xl items-center justify-between rounded-2xl border border-border/50 bg-background/70 px-4 py-2.5 shadow-black/[0.03] shadow-lg backdrop-blur-xl">
           {/* Logo */}
-          <a href="#about" className="flex items-center gap-2.5 shrink-0">
+          <a href="#about" className="flex shrink-0 items-center gap-2.5">
             <Image
               src="/images/logo/zingspark_Icon_FullColor.svg"
               alt="Zingspark"
               width={32}
               height={32}
-              className="w-7 h-7"
+              className="h-7 w-7"
             />
-            <span className="font-semibold text-sm tracking-tight hidden sm:inline">
+            <span className="hidden font-semibold text-sm tracking-tight sm:inline">
               Zingspark
             </span>
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden items-center gap-6 md:flex">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground text-sm transition-colors hover:text-foreground"
               >
                 {item.label}
               </a>
@@ -55,15 +58,15 @@ export default function SiteHeader() {
 
             {/* Mobile hamburger */}
             <button
-              className="flex md:hidden items-center justify-center w-8 h-8 rounded-lg hover:bg-secondary transition-colors cursor-pointer"
+              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg transition-colors hover:bg-secondary md:hidden"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
-              <div className="relative w-4 h-3">
+              <div className="relative h-3 w-4">
                 <span
                   className={cn(
                     "absolute left-0 h-0.5 w-4 bg-foreground transition-all duration-200",
-                    mobileOpen ? "top-1.5 -rotate-45" : "top-0",
+                    mobileOpen ? "-rotate-45 top-1.5" : "top-0",
                   )}
                 />
                 <span
@@ -79,13 +82,13 @@ export default function SiteHeader() {
 
         {/* Mobile dropdown */}
         {mobileOpen && (
-          <div className="mx-auto max-w-4xl mt-2 rounded-2xl border border-border/50 bg-background/95 backdrop-blur-xl p-4 shadow-lg md:hidden">
+          <div className="mx-auto mt-2 max-w-4xl rounded-2xl border border-border/50 bg-background/95 p-4 shadow-lg backdrop-blur-xl md:hidden">
             <nav className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="rounded-lg px-4 py-2.5 text-sm font-medium hover:bg-secondary transition-colors"
+                  className="rounded-lg px-4 py-2.5 font-medium text-sm transition-colors hover:bg-secondary"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}

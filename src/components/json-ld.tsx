@@ -11,8 +11,8 @@ export function JsonLd({ locale }: { locale: string }) {
     url: siteConfig.url,
     logo: `${siteConfig.url}/images/logo/zingspark_Icon_FullColor.svg`,
     description: isZh
-      ? "深耕智能技术的原生研发与场景落地，以 AI 之力，点亮每一次数字跃迁。"
-      : "Pioneering native AI R&D and real-world deployment, illuminating every digital leap into a new era of intelligence.",
+      ? "星跃智启是一家前沿实验室，致力于原生 AI Agent 研发与跨领域场景落地，构建打破物理与数字世界边界的通用智能体。"
+      : "Zingspark is a Frontier Lab dedicated to native AI Agent R&D and cross-domain deployment, building universal agents that break the boundaries between the physical and digital worlds.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Shanghai",
