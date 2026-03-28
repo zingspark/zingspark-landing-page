@@ -1,7 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { HeroSection } from "@/components/hero-section";
-import SiteHeader from "@/components/site-header";
 import { LazySections } from "@/components/lazy-sections";
+import SiteHeader from "@/components/site-header";
 
 export default async function Home({
   params,

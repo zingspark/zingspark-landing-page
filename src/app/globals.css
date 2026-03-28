@@ -51,19 +51,19 @@
 }
 
 .dark {
-  --background: oklch(0.08 0.025 265);
+  --background: oklch(0.065 0.02 265);
   --foreground: oklch(0.96 0.005 250);
-  --card: oklch(0.12 0.03 265);
+  --card: oklch(0.1 0.025 265);
   --card-foreground: oklch(0.96 0.005 250);
-  --popover: oklch(0.12 0.03 265);
+  --popover: oklch(0.1 0.025 265);
   --popover-foreground: oklch(0.96 0.005 250);
   --primary: oklch(0.68 0.17 255);
-  --primary-foreground: oklch(0.08 0.025 265);
-  --secondary: oklch(0.18 0.035 265);
+  --primary-foreground: oklch(0.065 0.02 265);
+  --secondary: oklch(0.15 0.03 265);
   --secondary-foreground: oklch(0.96 0.005 250);
-  --muted: oklch(0.18 0.035 265);
+  --muted: oklch(0.15 0.03 265);
   --muted-foreground: oklch(0.65 0.02 255);
-  --accent: oklch(0.18 0.035 265);
+  --accent: oklch(0.15 0.03 265);
   --accent-foreground: oklch(0.96 0.005 250);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
@@ -98,6 +98,80 @@
   }
 }
 
+/* Premium noise texture overlay */
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Grid pattern background */
+.grid-pattern {
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Gradient mesh for hero */
+.gradient-mesh {
+  background:
+    radial-gradient(at 20% 30%, oklch(0.62 0.18 255 / 0.15) 0%, transparent 50%),
+    radial-gradient(at 80% 20%, oklch(0.68 0.17 290 / 0.12) 0%, transparent 50%),
+    radial-gradient(at 50% 80%, oklch(0.65 0.15 200 / 0.1) 0%, transparent 50%);
+}
+
+.dark .gradient-mesh {
+  background:
+    radial-gradient(at 20% 30%, oklch(0.62 0.18 255 / 0.25) 0%, transparent 50%),
+    radial-gradient(at 80% 20%, oklch(0.68 0.17 290 / 0.2) 0%, transparent 50%),
+    radial-gradient(at 50% 80%, oklch(0.65 0.15 200 / 0.15) 0%, transparent 50%);
+}
+
+/* Glass card effect */
+.glass-card {
+  background: oklch(0.97 0.004 247 / 0.6);
+  backdrop-filter: blur(20px) saturate(1.5);
+  border: 1px solid oklch(0 0 0 / 0.06);
+}
+
+.dark .glass-card {
+  background: oklch(0.12 0.03 265 / 0.5);
+  backdrop-filter: blur(20px) saturate(1.5);
+  border: 1px solid oklch(1 0 0 / 0.08);
+}
+
+/* Shimmer effect for buttons */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 25%,
+    oklch(1 0 0 / 0.15) 50%,
+    transparent 75%
+  );
+  transform: translateX(-100%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @keyframes float {
   0%,
   100% {
@@ -124,5 +198,229 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Aurora gradient animation */
+.aurora-bg {
+  background: linear-gradient(
+    -45deg,
+    oklch(0.62 0.18 255 / 0.06),
+    oklch(0.68 0.17 290 / 0.06),
+    oklch(0.65 0.15 200 / 0.06),
+    oklch(0.62 0.18 255 / 0.06)
+  );
+  background-size: 400% 400%;
+  animation: aurora 15s ease infinite;
+}
+
+.dark .aurora-bg {
+  background: linear-gradient(
+    -45deg,
+    oklch(0.62 0.18 255 / 0.12),
+    oklch(0.68 0.17 290 / 0.12),
+    oklch(0.65 0.15 200 / 0.12),
+    oklch(0.62 0.18 255 / 0.12)
+  );
+  background-size: 400% 400%;
+  animation: aurora 15s ease infinite;
+}
+
+/* Section divider — centered gradient line with brand colors */
+.section-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1px;
+  pointer-events: none;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 60%;
+  max-width: 600px;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #4893fc 20%,
+    #969dff 50%,
+    #bd99fe 80%,
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+.dark .section-divider::before {
+  opacity: 0.7;
+}
+
+/* Section divider glow — adds a glowing orb at the center */
+.section-divider-glow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #969dff;
+  box-shadow:
+    0 0 8px 2px oklch(0.68 0.15 275 / 0.6),
+    0 0 20px 6px oklch(0.68 0.15 275 / 0.3);
+  opacity: 0.8;
+}
+
+.dark .section-divider-glow::after {
+  opacity: 1;
+  box-shadow:
+    0 0 10px 3px oklch(0.68 0.15 275 / 0.7),
+    0 0 24px 8px oklch(0.68 0.15 275 / 0.4);
+}
+
+/* Enhanced glass card — refined glass morphism with inner glow */
+.glass-card-enhanced {
+  background: oklch(0.97 0.004 247 / 0.65);
+  backdrop-filter: blur(24px) saturate(1.6);
+  border: 1px solid oklch(0 0 0 / 0.08);
+  box-shadow:
+    inset 0 1px 0 0 oklch(1 0 0 / 0.15),
+    inset 0 0 20px 0 oklch(0.68 0.15 275 / 0.04),
+    0 4px 24px -4px oklch(0 0 0 / 0.06);
+}
+
+.dark .glass-card-enhanced {
+  background: oklch(0.12 0.03 265 / 0.55);
+  backdrop-filter: blur(24px) saturate(1.6);
+  border: 1px solid oklch(1 0 0 / 0.1);
+  box-shadow:
+    inset 0 1px 0 0 oklch(1 0 0 / 0.08),
+    inset 0 0 24px 0 oklch(0.68 0.15 275 / 0.08),
+    0 4px 24px -4px oklch(0 0 0 / 0.3);
+}
+
+/* Fallback for browsers without backdrop-filter support */
+@supports not (backdrop-filter: blur(1px)) {
+  .glass-card-enhanced {
+    background: oklch(0.97 0.004 247 / 0.92);
+  }
+  .dark .glass-card-enhanced {
+    background: oklch(0.12 0.03 265 / 0.92);
+  }
+}
+
+/* Gradient border focus — input focus state with brand gradient border animation */
+.gradient-border-focus {
+  position: relative;
+  isolation: isolate;
+}
+
+.gradient-border-focus::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #4893fc, #969dff, #bd99fe);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 200ms ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gradient-border-focus:focus-within::before {
+  opacity: 1;
+}
+
+.dark .gradient-border-focus::before {
+  background: linear-gradient(135deg, #4893fc, #969dff, #bd99fe);
+  opacity: 0;
+}
+
+.dark .gradient-border-focus:focus-within::before {
+  opacity: 1;
+}
+
+/* Floating particle animation — gentle vertical drift with opacity fade */
+@keyframes float-particle {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-18px);
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+/* Pulse glow animation — scale + opacity pulse for selected state indicators */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* Gradient border spin — rotates the gradient angle for animated border effect */
+@keyframes gradient-border-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* prefers-reduced-motion — disable all animations and transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    /* biome-ignore lint/complexity/noImportantStyles: !important is required for a11y — must override all animation durations */
+    animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: !important is required for a11y — must override all transition durations */
+    transition-duration: 0.01ms !important;
   }
 }

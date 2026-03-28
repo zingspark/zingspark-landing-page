@@ -14,7 +14,8 @@
       "!dist",
       "!build",
       "!docs",
-      "!**/src/generated"
+      "!**/src/generated",
+      "!.vscode"
     ]
   },
   "formatter": {

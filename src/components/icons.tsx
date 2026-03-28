@@ -254,3 +254,225 @@ export const Icons = {
     </svg>
   ),
 };
+
+// --- JD Section SVG Line Icons ---
+
+type LineIconProps = { className?: string };
+
+export function AgentIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <rect x="5" y="2" width="14" height="14" rx="3" />
+      <circle cx="9.5" cy="9" r="1" />
+      <circle cx="14.5" cy="9" r="1" />
+      <path d="M9 13h6" />
+      <path d="M12 16v3" />
+      <path d="M8 22h8" />
+      <path d="M2 6h3" />
+      <path d="M19 6h3" />
+    </svg>
+  );
+}
+
+export function BrainIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="M12 2a5 5 0 0 0-4.8 3.6A4 4 0 0 0 4 9.5a4.5 4.5 0 0 0 1 8.4A5 5 0 0 0 12 22" />
+      <path d="M12 2a5 5 0 0 1 4.8 3.6A4 4 0 0 1 20 9.5a4.5 4.5 0 0 1-1 8.4A5 5 0 0 1 12 22" />
+      <path d="M12 2v20" />
+      <path d="M8 8h.5" />
+      <path d="M15.5 8H16" />
+      <path d="M8 14h.5" />
+      <path d="M15.5 14H16" />
+    </svg>
+  );
+}
+
+export function ArchitectIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <rect x="3" y="3" width="7" height="7" rx="1" />
+      <rect x="14" y="3" width="7" height="7" rx="1" />
+      <rect x="3" y="14" width="7" height="7" rx="1" />
+      <rect x="14" y="14" width="7" height="7" rx="1" />
+      <path d="M10 6.5h4" />
+      <path d="M6.5 10v4" />
+      <path d="M17.5 10v4" />
+      <path d="M10 17.5h4" />
+    </svg>
+  );
+}
+
+export function ChipIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <rect x="5" y="5" width="14" height="14" rx="2" />
+      <rect x="9" y="9" width="6" height="6" rx="1" />
+      <path d="M9 2v3" />
+      <path d="M15 2v3" />
+      <path d="M9 19v3" />
+      <path d="M15 19v3" />
+      <path d="M2 9h3" />
+      <path d="M2 15h3" />
+      <path d="M19 9h3" />
+      <path d="M19 15h3" />
+    </svg>
+  );
+}
+
+export function SearchIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <circle cx="11" cy="11" r="7" />
+      <path d="m16.5 16.5 5 5" />
+      <path d="M8 11h6" />
+      <path d="M11 8v6" />
+    </svg>
+  );
+}
+
+export function GlobeIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+      <path d="M2 12h20" />
+      <path d="M4.5 7h15" />
+      <path d="M4.5 17h15" />
+    </svg>
+  );
+}
+
+export function ClipboardIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <rect x="5" y="4" width="14" height="18" rx="2" />
+      <path d="M9 2h6a1 1 0 0 1 1 1v1H8V3a1 1 0 0 1 1-1z" />
+      <path d="M9 12h6" />
+      <path d="M9 16h4" />
+    </svg>
+  );
+}
+
+export function UsersIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <circle cx="9" cy="7" r="3" />
+      <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+      <circle cx="17" cy="9" r="2.5" />
+      <path d="M21 21v-1.5a3 3 0 0 0-3-3h-.5" />
+    </svg>
+  );
+}
+
+export function PaletteIcon({ className }: LineIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="8" cy="9" r="1.5" fill="currentColor" />
+      <circle cx="12" cy="7" r="1.5" fill="currentColor" />
+      <circle cx="16" cy="9" r="1.5" fill="currentColor" />
+      <circle cx="8" cy="13" r="1.5" fill="currentColor" />
+      <path d="M15.5 13a2.5 2.5 0 0 1 2.5 2.5c0 2.5-2 3.5-6 3.5a8 8 0 0 1-1-.06" />
+    </svg>
+  );
+}

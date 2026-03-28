@@ -8,16 +8,12 @@ const VisionSection = dynamic(
 );
 const CapabilitySection = dynamic(
   () =>
-    import("@/components/capability-section").then(
-      (m) => m.CapabilitySection,
-    ),
+    import("@/components/capability-section").then((m) => m.CapabilitySection),
   { ssr: false },
 );
 const UniversityMarquee = dynamic(
   () =>
-    import("@/components/university-marquee").then(
-      (m) => m.UniversityMarquee,
-    ),
+    import("@/components/university-marquee").then((m) => m.UniversityMarquee),
   { ssr: false },
 );
 const JDSection = dynamic(
