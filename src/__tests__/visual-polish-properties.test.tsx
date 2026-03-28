@@ -1,10 +1,10 @@
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import fc from "fast-check";
 import { isValidElement } from "react";
 import { describe, expect, test } from "vitest";
-import fc from "fast-check";
-import { siteConfig } from "@/config/site-config";
 import { jobIcons } from "@/components/jd-section";
+import { siteConfig } from "@/config/site-config";
 
 /**
  * Feature: visual-polish, Property 1: 岗位图标类型一致性
@@ -32,7 +32,6 @@ describe("Feature: visual-polish, Property 1: 岗位图标类型一致性", () =
     );
   });
 });
-
 
 /**
  * Feature: visual-polish, Property 5: 装饰元素不阻塞交互
@@ -148,7 +147,6 @@ describe("Feature: visual-polish, Property 5: 装饰元素不阻塞交互", () =
     );
   });
 });
-
 
 /**
  * Feature: visual-polish, Property 4: 动画仅使用 GPU 加速属性
@@ -276,7 +274,6 @@ describe("Feature: visual-polish, Property 4: 动画仅使用 GPU 加速属性",
   });
 });
 
-
 /**
  * Feature: visual-polish, Property 7: 品牌渐变色一致性
  *
@@ -356,7 +353,8 @@ describe("Feature: visual-polish, Property 7: 品牌渐变色一致性", () => {
       // technique, not for brand color gradients.
       // Matches: mask:, -webkit-mask:, WebkitMask:, and continuation lines
       // with the common masking pattern linear-gradient(#fff 0 0)
-      if (/mask\s*:|WebkitMask\s*:|webkitMask\s*:|-webkit-mask\s*:/i.test(line)) continue;
+      if (/mask\s*:|WebkitMask\s*:|webkitMask\s*:|-webkit-mask\s*:/i.test(line))
+        continue;
       if (/linear-gradient\(#fff\b/.test(line)) continue;
 
       // Detect gradient declarations

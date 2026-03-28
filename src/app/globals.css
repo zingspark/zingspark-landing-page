@@ -413,14 +413,16 @@
   }
 }
 
-/* prefers-reduced-motion — disable all animations and transitions for users who prefer reduced motion */
+/* prefers-reduced-motion — disable CSS-only decorative animations for users who prefer reduced motion.
+   Only targets specific decorative animations; does NOT use !important on * to avoid breaking
+   Framer Motion / JS-driven animations and interactive transitions. */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    /* biome-ignore lint/complexity/noImportantStyles: !important is required for a11y — must override all animation durations */
-    animation-duration: 0.01ms !important;
-    /* biome-ignore lint/complexity/noImportantStyles: !important is required for a11y — must override all transition durations */
-    transition-duration: 0.01ms !important;
+  .aurora-bg,
+  .grid-pattern,
+  .gradient-mesh {
+    animation: none;
+  }
+  .shimmer::after {
+    animation: none;
   }
 }
