@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { LanguageToggle } from "./language-toggle";
@@ -98,7 +99,7 @@ export default function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "relative rounded-lg px-3 py-1.5 text-sm transition-all duration-200",
+                    "relative rounded-lg px-3 py-1.5 text-sm transition-colors duration-200",
                     isActive
                       ? "text-foreground"
                       : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground",
@@ -106,7 +107,11 @@ export default function SiteHeader() {
                 >
                   {item.label}
                   {isActive && (
-                    <span className="pointer-events-none absolute right-1 bottom-0 left-1 h-0.5 rounded-full bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE]" />
+                    <motion.span
+                      layoutId="nav-underline"
+                      className="pointer-events-none absolute right-1 bottom-0 left-1 h-0.5 rounded-full bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE]"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
                   )}
                 </a>
               );
