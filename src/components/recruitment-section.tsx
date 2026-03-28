@@ -65,7 +65,7 @@ export function RecruitmentSection() {
   );
 
   const inputClass =
-    "w-full rounded-xl border border-border/50 bg-background/50 px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/50 backdrop-blur-sm transition-all duration-200 focus:border-transparent focus:bg-background/80 focus:outline-none focus:shadow-lg focus:shadow-primary/5";
+    "w-full rounded-xl border border-border/80 dark:border-border/50 bg-background/70 dark:bg-background/50 px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/50 backdrop-blur-sm transition-all duration-200 focus:border-transparent focus:bg-background/80 focus:outline-none focus:shadow-lg focus:shadow-primary/5 shadow-sm shadow-black/[0.03] dark:shadow-none";
 
   const inputWrapperClass = "gradient-border-focus rounded-xl";
 
@@ -287,7 +287,7 @@ export function RecruitmentSection() {
               {/* Submit */}
               <button
                 type="submit"
-                className="group shimmer flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[length:200%_100%] bg-gradient-to-r bg-left from-[#4893FC] via-[#7B93FF] to-[#BD99FE] px-6 py-4 font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-right hover:shadow-primary/30 hover:shadow-xl hover:brightness-110 active:scale-[0.98]"
+                className="group shimmer flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[length:200%_100%] bg-gradient-to-r bg-left from-[#4893FC] via-[#7B93FF] to-[#BD99FE] px-6 py-4 font-semibold text-white shadow-lg shadow-primary/35 transition-all duration-300 hover:bg-right hover:shadow-primary/45 hover:shadow-xl hover:brightness-110 active:scale-[0.98] dark:shadow-primary/20 dark:hover:shadow-primary/30"
               >
                 <Icons.send className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:scale-110" />
                 {t("submit")}

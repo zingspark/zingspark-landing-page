@@ -43,9 +43,9 @@ export function HeroSection() {
           }}
           className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 h-[700px] w-[700px] md:h-[1100px] md:w-[1100px]"
         >
-          <div className="absolute inset-0 rounded-full border border-primary/[0.07] dark:border-primary/[0.15]" />
-          <div className="absolute inset-[15%] rounded-full border border-primary/[0.05] border-dashed dark:border-primary/[0.1]" />
-          <div className="absolute inset-[30%] rounded-full border border-primary/[0.03] dark:border-primary/[0.08]" />
+          <div className="absolute inset-0 rounded-full border border-primary/[0.15] dark:border-primary/[0.15]" />
+          <div className="absolute inset-[15%] rounded-full border border-primary/[0.12] border-dashed dark:border-primary/[0.1]" />
+          <div className="absolute inset-[30%] rounded-full border border-primary/[0.08] dark:border-primary/[0.08]" />
           {/* Orbital dots */}
           <div className="-translate-x-1/2 -translate-y-1/2 absolute top-0 left-1/2 h-2 w-2 rounded-full bg-primary/30 shadow-[0_0_12px_4px] shadow-primary/20" />
           <div className="-translate-y-1/2 absolute top-1/2 right-0 h-1.5 w-1.5 translate-x-1/2 rounded-full bg-[#BD99FE]/40 shadow-[#BD99FE]/20 shadow-[0_0_10px_3px]" />
@@ -61,15 +61,15 @@ export function HeroSection() {
           }}
           className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 h-[500px] w-[500px] md:h-[800px] md:w-[800px]"
         >
-          <div className="absolute inset-0 rounded-full border border-[#BD99FE]/[0.04] border-dashed dark:border-[#BD99FE]/[0.08]" />
+          <div className="absolute inset-0 rounded-full border border-[#BD99FE]/[0.10] border-dashed dark:border-[#BD99FE]/[0.08]" />
           <div className="-translate-x-1/2 absolute bottom-0 left-1/2 h-1.5 w-1.5 translate-y-1/2 rounded-full bg-[#00B95C]/40 shadow-[#00B95C]/20 shadow-[0_0_10px_3px]" />
         </motion.div>
 
         {/* Glow orbs - larger and more vivid */}
-        <div className="absolute top-[15%] left-[10%] h-72 w-72 animate-[glow-pulse_6s_ease-in-out_infinite] rounded-full bg-[#4893FC] opacity-[0.04] blur-[100px] md:h-[28rem] md:w-[28rem] dark:opacity-[0.08]" />
-        <div className="absolute right-[10%] bottom-[15%] h-72 w-72 animate-[glow-pulse_8s_ease-in-out_infinite_1s] rounded-full bg-[#BD99FE] opacity-[0.04] blur-[100px] md:h-[28rem] md:w-[28rem] dark:opacity-[0.08]" />
-        <div className="absolute top-[45%] right-[25%] h-56 w-56 animate-[glow-pulse_7s_ease-in-out_infinite_2s] rounded-full bg-[#00B95C] opacity-[0.03] blur-[80px] md:h-80 md:w-80 dark:opacity-[0.06]" />
-        <div className="absolute bottom-[30%] left-[30%] h-48 w-48 animate-[glow-pulse_9s_ease-in-out_infinite_3s] rounded-full bg-[#FC413D] opacity-[0.02] blur-[70px] md:h-64 md:w-64 dark:opacity-[0.04]" />
+        <div className="absolute top-[15%] left-[10%] h-72 w-72 animate-[glow-pulse_6s_ease-in-out_infinite] rounded-full bg-[#4893FC] opacity-[0.10] blur-[100px] md:h-[28rem] md:w-[28rem] dark:opacity-[0.08]" />
+        <div className="absolute right-[10%] bottom-[15%] h-72 w-72 animate-[glow-pulse_8s_ease-in-out_infinite_1s] rounded-full bg-[#BD99FE] opacity-[0.10] blur-[100px] md:h-[28rem] md:w-[28rem] dark:opacity-[0.08]" />
+        <div className="absolute top-[45%] right-[25%] h-56 w-56 animate-[glow-pulse_7s_ease-in-out_infinite_2s] rounded-full bg-[#00B95C] opacity-[0.08] blur-[80px] md:h-80 md:w-80 dark:opacity-[0.06]" />
+        <div className="absolute bottom-[30%] left-[30%] h-48 w-48 animate-[glow-pulse_9s_ease-in-out_infinite_3s] rounded-full bg-[#FC413D] opacity-[0.06] blur-[70px] md:h-64 md:w-64 dark:opacity-[0.04]" />
       </div>
 
       {/* Content */}
@@ -121,7 +121,7 @@ export function HeroSection() {
             {t("line1")}
           </span>
           <br />
-          <span className="bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE] bg-clip-text text-transparent drop-shadow-[0_0_40px_oklch(0.62_0.18_255_/_0.2)]">
+          <span className="bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE] bg-clip-text text-transparent drop-shadow-[0_0_40px_oklch(0.62_0.18_255_/_0.35)] dark:drop-shadow-[0_0_40px_oklch(0.62_0.18_255_/_0.2)]">
             {t("line2")}
           </span>
         </motion.h1>
@@ -141,21 +141,14 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center md:mt-12"
+          className="mt-10 flex justify-center md:mt-12"
         >
           <a
             href="#join"
-            className="shimmer inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#4893FC] via-[#7B93FF] to-[#BD99FE] px-8 py-3.5 font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:scale-105 hover:shadow-primary/35 hover:shadow-xl active:scale-100"
+            className="shimmer inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#4893FC] via-[#7B93FF] to-[#BD99FE] px-8 py-3.5 font-semibold text-white shadow-lg shadow-primary/40 transition-all hover:scale-105 hover:shadow-primary/50 hover:shadow-xl active:scale-100 dark:shadow-primary/25 dark:hover:shadow-primary/35"
           >
             {t("cta")}
             <Icons.send className="h-4 w-4" />
-          </a>
-          <a
-            href="#vision"
-            className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/50 px-6 py-3 font-medium text-muted-foreground text-sm backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-card/80 hover:text-foreground"
-          >
-            {t("scrollDown")}
-            <Icons.chevronDown className="h-4 w-4" />
           </a>
         </motion.div>
 

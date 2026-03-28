@@ -167,7 +167,7 @@ export function CapabilitySection() {
                 variants={cardVariants}
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.2 }}
-                className="group relative overflow-hidden rounded-2xl border border-border/50 bg-card/60 p-8 backdrop-blur-sm transition-[border-color,box-shadow] duration-200 hover:shadow-2xl md:p-10 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-1px_0_rgba(255,255,255,0.03)]"
+                className="group relative overflow-hidden rounded-2xl border border-border/70 bg-card/60 p-8 shadow-sm backdrop-blur-sm transition-[border-color,box-shadow] duration-200 hover:shadow-2xl md:p-10 dark:border-border/50 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-1px_0_rgba(255,255,255,0.03)]"
                 style={{
                   // @ts-expect-error -- CSS custom property for hover glow color
                   "--card-glow": colors.glow,

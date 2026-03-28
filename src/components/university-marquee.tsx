@@ -48,7 +48,7 @@ export function UniversityMarquee() {
                 key={`${uni.name.en}-${index}`}
                 className="group flex flex-col items-center gap-3 px-3 md:px-5"
               >
-                <div className="relative flex h-18 w-18 items-center justify-center rounded-2xl border border-border/50 bg-card/60 p-3.5 shadow-[0_0_8px_rgba(150,157,255,0.06)] backdrop-blur-sm transition-all duration-200 group-hover:border-[#969DFF]/30 group-hover:bg-card/90 group-hover:shadow-[0_0_20px_rgba(150,157,255,0.15)] md:h-22 md:w-22 md:p-4 dark:shadow-[0_0_12px_rgba(150,157,255,0.1)] dark:group-hover:shadow-[0_0_24px_rgba(150,157,255,0.25)]">
+                <div className="relative flex h-18 w-18 items-center justify-center rounded-2xl border border-border/50 bg-card/60 p-3.5 shadow-[0_2px_12px_rgba(150,157,255,0.12),0_1px_3px_rgba(0,0,0,0.06)] backdrop-blur-sm transition-all duration-200 group-hover:border-[#969DFF]/30 group-hover:bg-card/90 group-hover:shadow-[0_4px_24px_rgba(150,157,255,0.2),0_2px_6px_rgba(0,0,0,0.08)] md:h-22 md:w-22 md:p-4 dark:shadow-[0_0_12px_rgba(150,157,255,0.1)] dark:group-hover:shadow-[0_0_24px_rgba(150,157,255,0.25)]">
                   <Image
                     src={uni.logo}
                     alt={uni.name[locale]}

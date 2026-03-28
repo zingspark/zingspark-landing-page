@@ -69,9 +69,9 @@ export default function SiteHeader() {
       <div className="container py-4">
         <div
           className={cn(
-            "mx-auto flex max-w-4xl items-center justify-between rounded-2xl border border-border/30 px-4 py-2.5 shadow-lg backdrop-blur-2xl transition-colors duration-300",
+            "mx-auto flex max-w-4xl items-center justify-between rounded-2xl border border-border/50 px-4 py-2.5 shadow-lg backdrop-blur-2xl transition-colors duration-300",
             scrolled
-              ? "bg-background/80 shadow-black/[0.06] dark:bg-background/70 dark:shadow-black/[0.15]"
+              ? "bg-background/90 shadow-black/[0.06] dark:bg-background/70 dark:shadow-black/[0.15]"
               : "bg-background/60 shadow-black/[0.03] dark:bg-background/40 dark:shadow-black/[0.1]",
           )}
         >
@@ -144,7 +144,7 @@ export default function SiteHeader() {
 
         {/* Mobile dropdown */}
         {mobileOpen && (
-          <div className="mx-auto mt-2 max-w-4xl overflow-hidden rounded-2xl border border-border/30 bg-background/90 p-3 shadow-xl backdrop-blur-2xl md:hidden dark:bg-background/80">
+          <div className="mx-auto mt-2 max-w-4xl overflow-hidden rounded-2xl border border-border/50 bg-background/90 p-3 shadow-xl backdrop-blur-2xl md:hidden dark:bg-background/80">
             <nav className="flex flex-col gap-0.5">
               {navItems.map((item) => {
                 const isActive = activeSection === item.href.slice(1);

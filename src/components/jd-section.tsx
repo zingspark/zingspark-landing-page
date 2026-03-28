@@ -122,7 +122,7 @@ export function JDSection() {
                 className={`group relative cursor-pointer overflow-hidden rounded-xl border p-5 text-left transition-all duration-200 md:p-6 ${
                   isSelected
                     ? "border-transparent bg-primary/10 shadow-lg shadow-primary/15"
-                    : "border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 hover:bg-card/90 hover:shadow-lg hover:shadow-primary/10"
+                    : "border-border/70 bg-card/60 shadow-sm backdrop-blur-sm hover:border-primary/40 hover:bg-card/90 hover:shadow-[0_8px_30px_rgba(72,147,252,0.15)] dark:border-border/50 dark:shadow-none dark:hover:shadow-lg dark:hover:shadow-primary/10"
                 }`}
               >
                 {/* Animated gradient border for selected state */}

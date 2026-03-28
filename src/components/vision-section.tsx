@@ -15,8 +15,8 @@ export function VisionSection() {
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-1/4 left-[10%] h-px w-32 bg-gradient-to-r from-transparent via-primary/20 to-transparent md:w-64" />
         <div className="absolute right-[10%] bottom-1/3 h-px w-32 bg-gradient-to-r from-transparent via-[#BD99FE]/20 to-transparent md:w-64" />
-        <div className="absolute top-[20%] right-[20%] h-32 w-32 rounded-full bg-primary/[0.03] blur-[60px] dark:bg-primary/[0.06]" />
-        <div className="absolute bottom-[20%] left-[20%] h-32 w-32 rounded-full bg-[#BD99FE]/[0.03] blur-[60px] dark:bg-[#BD99FE]/[0.06]" />
+        <div className="absolute top-[20%] right-[20%] h-32 w-32 rounded-full bg-primary/[0.08] blur-[60px] dark:bg-primary/[0.06]" />
+        <div className="absolute bottom-[20%] left-[20%] h-32 w-32 rounded-full bg-[#BD99FE]/[0.08] blur-[60px] dark:bg-[#BD99FE]/[0.06]" />
       </div>
 
       {/* Decorative geometric arcs & lines */}
@@ -26,7 +26,7 @@ export function VisionSection() {
       >
         {/* Top-left curved arc */}
         <div
-          className="absolute top-[10%] left-[5%] h-48 w-48 rounded-full border border-primary/[0.08] dark:border-primary/[0.12]"
+          className="absolute top-[10%] left-[5%] h-48 w-48 rounded-full border border-primary/[0.15] dark:border-primary/[0.12]"
           style={{
             borderRightColor: "transparent",
             borderBottomColor: "transparent",
@@ -35,7 +35,7 @@ export function VisionSection() {
         />
         {/* Bottom-right curved arc */}
         <div
-          className="absolute right-[5%] bottom-[10%] h-56 w-56 rounded-full border border-[#BD99FE]/[0.08] dark:border-[#BD99FE]/[0.12]"
+          className="absolute right-[5%] bottom-[10%] h-56 w-56 rounded-full border border-[#BD99FE]/[0.15] dark:border-[#BD99FE]/[0.12]"
           style={{
             borderLeftColor: "transparent",
             borderTopColor: "transparent",
@@ -44,17 +44,17 @@ export function VisionSection() {
         />
         {/* Diagonal accent line — top right */}
         <div
-          className="absolute top-[15%] right-[8%] h-px w-40 bg-gradient-to-r from-transparent via-[#969DFF]/15 to-transparent"
+          className="absolute top-[15%] right-[8%] h-px w-40 bg-gradient-to-r from-transparent via-[#969DFF]/25 to-transparent"
           style={{ transform: "rotate(-25deg)" }}
         />
         {/* Diagonal accent line — bottom left */}
         <div
-          className="absolute bottom-[15%] left-[8%] h-px w-40 bg-gradient-to-r from-transparent via-primary/15 to-transparent"
+          className="absolute bottom-[15%] left-[8%] h-px w-40 bg-gradient-to-r from-transparent via-primary/25 to-transparent"
           style={{ transform: "rotate(25deg)" }}
         />
         {/* Small arc near content center-left */}
         <div
-          className="absolute top-[45%] left-[3%] h-24 w-24 rounded-full border border-[#969DFF]/[0.06] dark:border-[#969DFF]/[0.10]"
+          className="absolute top-[45%] left-[3%] h-24 w-24 rounded-full border border-[#969DFF]/[0.12] dark:border-[#969DFF]/[0.10]"
           style={{
             borderRightColor: "transparent",
             borderTopColor: "transparent",
@@ -132,14 +132,14 @@ export function VisionSection() {
           </motion.div>
 
           {/* Tagline */}
-          <h2
-            className="font-bold text-4xl leading-tight tracking-tighter md:text-6xl"
-            style={{
-              filter:
-                "drop-shadow(0 0 40px rgba(150, 157, 255, 0.3)) drop-shadow(0 0 80px rgba(72, 147, 252, 0.15))",
-            }}
-          >
-            <span className="bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE] bg-clip-text text-transparent">
+          <h2 className="font-bold text-4xl leading-tight tracking-tighter md:text-6xl">
+            <span
+              className="bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE] bg-clip-text text-transparent"
+              style={{
+                filter:
+                  "drop-shadow(0 0 40px rgba(150, 157, 255, 0.45)) drop-shadow(0 0 80px rgba(72, 147, 252, 0.25))",
+              }}
+            >
               {t("tagline")}
             </span>
           </h2>

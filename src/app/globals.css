@@ -30,23 +30,23 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.985 0.002 247);
+  --background: oklch(0.975 0.006 260);
   --foreground: oklch(0.13 0.028 261);
-  --card: oklch(0.97 0.004 247);
+  --card: oklch(0.99 0.003 260);
   --card-foreground: oklch(0.13 0.028 261);
-  --popover: oklch(0.97 0.004 247);
+  --popover: oklch(0.99 0.003 260);
   --popover-foreground: oklch(0.13 0.028 261);
   --primary: oklch(0.62 0.18 255);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.94 0.01 255);
+  --secondary: oklch(0.92 0.015 260);
   --secondary-foreground: oklch(0.25 0.03 261);
-  --muted: oklch(0.94 0.01 255);
-  --muted-foreground: oklch(0.55 0.02 261);
+  --muted: oklch(0.92 0.015 260);
+  --muted-foreground: oklch(0.45 0.03 261);
   --accent: oklch(0.94 0.01 255);
   --accent-foreground: oklch(0.25 0.03 261);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0 0 0 / 8%);
-  --input: oklch(0 0 0 / 12%);
+  --border: oklch(0 0 0 / 15%);
+  --input: oklch(0 0 0 / 18%);
   --ring: oklch(0.62 0.18 255);
 }
 
@@ -119,9 +119,9 @@
 /* Gradient mesh for hero */
 .gradient-mesh {
   background:
-    radial-gradient(at 20% 30%, oklch(0.62 0.18 255 / 0.15) 0%, transparent 50%),
-    radial-gradient(at 80% 20%, oklch(0.68 0.17 290 / 0.12) 0%, transparent 50%),
-    radial-gradient(at 50% 80%, oklch(0.65 0.15 200 / 0.1) 0%, transparent 50%);
+    radial-gradient(at 20% 30%, oklch(0.62 0.18 255 / 0.22) 0%, transparent 50%),
+    radial-gradient(at 80% 20%, oklch(0.68 0.17 290 / 0.18) 0%, transparent 50%),
+    radial-gradient(at 50% 80%, oklch(0.65 0.15 200 / 0.15) 0%, transparent 50%);
 }
 
 .dark .gradient-mesh {
@@ -135,7 +135,8 @@
 .glass-card {
   background: oklch(0.97 0.004 247 / 0.6);
   backdrop-filter: blur(20px) saturate(1.5);
-  border: 1px solid oklch(0 0 0 / 0.06);
+  border: 1px solid oklch(0 0 0 / 0.12);
+  box-shadow: 0 2px 12px -2px oklch(0 0 0 / 0.08);
 }
 
 .dark .glass-card {
@@ -217,10 +218,10 @@
 .aurora-bg {
   background: linear-gradient(
     -45deg,
-    oklch(0.62 0.18 255 / 0.06),
-    oklch(0.68 0.17 290 / 0.06),
-    oklch(0.65 0.15 200 / 0.06),
-    oklch(0.62 0.18 255 / 0.06)
+    oklch(0.62 0.18 255 / 0.12),
+    oklch(0.68 0.17 290 / 0.12),
+    oklch(0.65 0.15 200 / 0.12),
+    oklch(0.62 0.18 255 / 0.12)
   );
   background-size: 400% 400%;
   animation: aurora 15s ease infinite;
@@ -266,7 +267,7 @@
     #bd99fe 80%,
     transparent 100%
   );
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .dark .section-divider::before {
@@ -287,7 +288,7 @@
   box-shadow:
     0 0 8px 2px oklch(0.68 0.15 275 / 0.6),
     0 0 20px 6px oklch(0.68 0.15 275 / 0.3);
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .dark .section-divider-glow::after {
@@ -301,11 +302,11 @@
 .glass-card-enhanced {
   background: oklch(0.97 0.004 247 / 0.65);
   backdrop-filter: blur(24px) saturate(1.6);
-  border: 1px solid oklch(0 0 0 / 0.08);
+  border: 1px solid oklch(0 0 0 / 0.14);
   box-shadow:
     inset 0 1px 0 0 oklch(1 0 0 / 0.15),
     inset 0 0 20px 0 oklch(0.68 0.15 275 / 0.04),
-    0 4px 24px -4px oklch(0 0 0 / 0.06);
+    0 4px 24px -4px oklch(0 0 0 / 0.1);
 }
 
 .dark .glass-card-enhanced {

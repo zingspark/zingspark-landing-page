@@ -18,7 +18,7 @@ export default function SiteFooter() {
       />
       {/* Soft glow beneath the divider line */}
       <div
-        className="pointer-events-none absolute top-0 right-0 left-0 h-8 opacity-30 dark:opacity-40"
+        className="pointer-events-none absolute top-0 right-0 left-0 h-8 opacity-50 dark:opacity-40"
         style={{
           background:
             "linear-gradient(90deg, transparent 10%, #4893FC40 30%, #969DFF40 50%, #BD99FE40 70%, transparent 90%)",
@@ -53,14 +53,14 @@ export default function SiteFooter() {
                 {t("company")}
               </span>
             </div>
-            <div className="flex items-center gap-1.5 text-muted-foreground/70 text-xs">
+            <div className="flex items-center gap-1.5 text-muted-foreground/80 text-xs dark:text-muted-foreground/70">
               <Icons.mapPin className="h-3 w-3" />
               <span>{t("offices")}</span>
             </div>
             {/* Email link with gradient underline on hover */}
             <a
               href={`mailto:${siteConfig.email}`}
-              className="group/email relative flex items-center gap-1.5 text-muted-foreground/70 text-xs transition-colors duration-200 hover:text-primary"
+              className="group/email relative flex items-center gap-1.5 text-muted-foreground/80 text-xs transition-colors duration-200 hover:text-primary dark:text-muted-foreground/70"
             >
               <Icons.mail className="h-3 w-3" />
               <span className="relative">
@@ -77,15 +77,17 @@ export default function SiteFooter() {
 
           {/* Slogan + Copyright */}
           <div className="flex flex-col items-center gap-3 text-center md:items-end md:text-right">
-            <p className="text-muted-foreground/50 text-xs italic">
+            <p className="text-muted-foreground/60 text-xs italic dark:text-muted-foreground/50">
               {t("slogan")}
             </p>
-            <p className="text-muted-foreground/40 text-xs">{t("copyright")}</p>
+            <p className="text-muted-foreground/50 text-xs dark:text-muted-foreground/40">
+              {t("copyright")}
+            </p>
           </div>
         </div>
 
         {/* Filing / 备案 */}
-        <div className="mt-8 flex flex-col items-center justify-center gap-2 border-border/20 border-t pt-6 text-muted-foreground/40 text-xs sm:flex-row sm:gap-4">
+        <div className="mt-8 flex flex-col items-center justify-center gap-2 border-border/20 border-t pt-6 text-muted-foreground/50 text-xs sm:flex-row sm:gap-4 dark:text-muted-foreground/40">
           <a
             href="https://beian.miit.gov.cn/"
             target="_blank"
