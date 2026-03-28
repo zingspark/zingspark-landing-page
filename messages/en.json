@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Zingspark — Native AI Agent R&D & Cross-Domain Deployment",
-    "description": "Zingspark is a Frontier Lab dedicated to building universal agents that break the boundaries between the physical and digital worlds."
+    "title": "Zingspark — Where Agents Come Alive",
+    "description": "Zingspark is a research lab engineering autonomous agents that perceive, reason, and operate across digital and physical environments."
   },
   "Header": {
     "about": "About",
@@ -12,45 +12,45 @@
     "join": "Join Us"
   },
   "Hero": {
-    "line1": "Native AI Agents.",
-    "line2": "Redefining Intelligence.",
-    "description": "LLMs are just the brain. Agents give AI eyes, limbs, and the power to act.",
+    "line1": "Agents That Act.",
+    "line2": "Intelligence, Unchained.",
+    "description": "Language models think. Agents do. We build the systems that close the gap between reasoning and real-world execution.",
     "cta": "Join Us",
     "scrollDown": "Scroll to explore"
   },
   "Vision": {
-    "tagline": "Empowering Paradigm Shifts with Native AI.",
-    "subtitle": "Native Intelligence. Leaping into the Future.",
-    "description": "As a Frontier Lab, Zingspark is dedicated to building universal agents that break the boundaries between the physical and digital worlds."
+    "tagline": "From Reasoning to Reality.",
+    "subtitle": "Building agents that don't just understand the world — they operate in it.",
+    "description": "We research and engineer autonomous agent systems — from multi-step planning and tool orchestration to embodied interaction — designed to work reliably in open-ended environments."
   },
   "Capabilities": {
-    "title": "Core Competencies",
+    "title": "What We Build",
     "items": {
       "framework": {
-        "title": "Deep Framework Deconstruction",
-        "description": "Deep expertise in leading multi-agent frameworks like OpenClaw, MetaGPT, and CrawlAI. Active contributors to top-tier Agent open-source projects."
+        "title": "Agent Architecture",
+        "description": "Deep fluency in multi-agent orchestration, planning pipelines, and tool-use protocols. We contribute to and build upon the leading open-source agent infrastructure."
       },
       "hardware": {
-        "title": "Software-Hardware Synergy",
-        "description": "Capability to extend from digital systems to physical hardware ecosystems, developing Agents with real-world interaction abilities."
+        "title": "Digital to Physical",
+        "description": "Extending agent capabilities from screen-bound tasks to sensor-rich, real-world environments — bridging code and hardware into unified systems."
       },
       "global": {
-        "title": "Global Reach",
-        "description": "Professional English communication skills and a tech stack synchronized with the international frontier in real-time."
+        "title": "Global-Native",
+        "description": "A team that thinks, ships, and collaborates across borders — with a research stack aligned to the global state of the art."
       }
     }
   },
   "Universities": {
-    "title": "A Group of Geeks, with the World's Brightest Minds"
+    "title": "Built by Minds from the World's Leading Institutions"
   },
   "Jobs": {
-    "title": "Open Positions",
-    "subtitle": "Find your role in shaping the future of AI Agents.",
+    "title": "We're Hiring",
+    "subtitle": "The problems are hard. The team is small. The impact is real.",
     "clickHint": "Click a role to apply"
   },
   "Recruitment": {
-    "title": "Join the Spark",
-    "subtitle": "We're looking for exceptional minds to build the future of intelligence together.",
+    "title": "Work With Us",
+    "subtitle": "If you care about making agents that actually work, we should talk.",
     "note": "Graduate & PhD candidates preferred",
     "name": "Full Name",
     "email": "Email",
@@ -75,7 +75,7 @@
     "company": "Zingspark (Shanghai) Tech Co., Ltd.",
     "offices": "Beijing · Shanghai · Shenzhen",
     "copyright": "© 2026 Zingspark. All rights reserved.",
-    "slogan": "Native AI Agents. Redefining Intelligence.",
+    "slogan": "Agents That Act. Intelligence, Unchained.",
     "email": "hi@zingspark.tech",
     "icp": "沪ICP备2026010157号",
     "police": "沪公网安备xxxxxxxxxx号"

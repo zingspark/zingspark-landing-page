@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "星跃智启 Zingspark — 原生 AI Agent 研发与跨领域场景落地",
-    "description": "星跃智启是一家前沿实验室，致力于构建打破物理与数字世界边界的通用智能体。"
+    "title": "星跃智启 Zingspark — 让智能体真正运转",
+    "description": "星跃智启是一家专注于自主智能体研发的前沿实验室，构建能感知、推理并在数字与物理环境中自如运作的 Agent 系统。"
   },
   "Header": {
     "about": "关于我们",
@@ -12,45 +12,45 @@
     "join": "加入我们"
   },
   "Hero": {
-    "line1": "原生 AI Agent",
-    "line2": "重新定义智能",
-    "description": "大语言模型只是大脑，Agent 才是赋予 AI 视觉、四肢与执行力的关键。",
+    "line1": "让 Agent 真正行动",
+    "line2": "释放智能的全部可能",
+    "description": "大模型负责思考，Agent 负责执行。我们构建从推理到现实行动的完整闭环。",
     "cta": "加入我们",
     "scrollDown": "向下滚动探索"
   },
   "Vision": {
-    "tagline": "以原生 AI 驱动范式跃迁",
-    "subtitle": "原生智能，跃迁未来",
-    "description": "作为一家前沿实验室，星跃智启致力于构建打破物理与数字世界边界的通用智能体。"
+    "tagline": "从推理到现实",
+    "subtitle": "构建不止于理解世界，更能在其中运作的智能体。",
+    "description": "我们研究并构建自主智能体系统——从多步规划、工具编排到具身交互——使其在开放环境中稳定可靠地运行。"
   },
   "Capabilities": {
-    "title": "核心能力",
+    "title": "我们在做什么",
     "items": {
       "framework": {
-        "title": "深度框架解构",
-        "description": "深度解构 OpenClaw、MetaGPT、CrawlAI 等主流多智能体框架，作为顶级 Agent 开源项目的活跃贡献者。"
+        "title": "智能体架构",
+        "description": "深入掌握多智能体编排、规划流水线与工具调用协议，持续贡献并构建于前沿开源智能体基础设施之上。"
       },
       "hardware": {
-        "title": "软硬件协同",
-        "description": "具备从数字系统走向实体硬件生态的能力，开发具有真实世界交互能力的 Agent。"
+        "title": "从数字到物理",
+        "description": "将智能体能力从屏幕端任务延伸至传感器密集的真实环境，让代码与硬件融为一体。"
       },
       "global": {
-        "title": "全球化能力",
-        "description": "具备英文专业沟通能力，技术栈与国际前沿实时同步。"
+        "title": "全球化基因",
+        "description": "一支跨越国界思考、交付与协作的团队，研究栈与全球最前沿保持同步。"
       }
     }
   },
   "Universities": {
-    "title": "一群极客，和全球最顶尖的大脑"
+    "title": "汇聚全球顶尖学府的研究者与工程师"
   },
   "Jobs": {
-    "title": "开放岗位",
-    "subtitle": "在 AI Agent 的未来中找到你的角色",
+    "title": "正在招募",
+    "subtitle": "问题很难，团队精锐，影响力真实可见。",
     "clickHint": "点击岗位即可申请"
   },
   "Recruitment": {
-    "title": "加入星跃",
-    "subtitle": "与一群很酷的人，共同创造酷的未来。",
+    "title": "与我们同行",
+    "subtitle": "如果你在意的是让智能体真正可用，我们应该聊聊。",
     "note": "硕士 / 博士优先",
     "name": "姓名",
     "email": "邮箱",
@@ -75,7 +75,7 @@
     "company": "星跃智启（上海）科技有限公司",
     "offices": "北京 · 上海 · 深圳",
     "copyright": "© 2026 星跃智启 版权所有",
-    "slogan": "原生 AI Agent，重新定义智能",
+    "slogan": "让 Agent 真正行动，释放智能的全部可能。",
     "email": "hi@zingspark.tech",
     "icp": "沪ICP备2026010157号",
     "police": "沪公网安备xxxxxxxxxx号"
