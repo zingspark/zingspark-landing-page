@@ -60,6 +60,12 @@ export async function generateMetadata({
     },
     robots: { index: true, follow: true },
     icons: { icon: "/images/logo/zingspark_Icon_FullColor.svg" },
+    verification: {
+      other: {
+        "baidu-site-verification": "codeva-hZZ8NHsjxf",
+        "sogou_site_verification": "xBvgipKvY2",
+      },
+    },
   };
 }
 
