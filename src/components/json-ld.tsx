@@ -9,7 +9,7 @@ export function JsonLd({ locale }: { locale: string }) {
     name: isZh ? siteConfig.name.zh : siteConfig.name.en,
     legalName: isZh ? siteConfig.fullName.zh : siteConfig.fullName.en,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/images/logo/zingspark_Icon_FullColor.svg`,
+    logo: `${siteConfig.url}/images/logo/logo-zingspark-color.png`,
     description: isZh
       ? "星跃智启是一家前沿实验室，致力于原生 AI Agent 研发与跨领域场景落地，构建打破物理与数字世界边界的通用智能体。"
       : "Zingspark is a Frontier Lab dedicated to native AI Agent R&D and cross-domain deployment, building universal agents that break the boundaries between the physical and digital worlds.",

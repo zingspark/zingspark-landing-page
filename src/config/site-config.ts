@@ -14,7 +14,7 @@ export const siteConfig = {
     repositoryUrl: "https://github.com/sylvanding/zingspark-landing-page",
   },
   openGraph: {
-    imageUrl: "https://zingspark.tech/images/logo/zingspark_Icon_FullColor.svg",
+    imageUrl: "https://zingspark.tech/images/logo/logo-zingspark-color.png",
     imageWidth: 1200,
     imageHeight: 630,
   },

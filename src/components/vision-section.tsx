@@ -14,9 +14,9 @@ export function VisionSection() {
       {/* Decorative elements */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-1/4 left-[10%] h-px w-32 bg-gradient-to-r from-transparent via-primary/20 to-transparent md:w-64" />
-        <div className="absolute right-[10%] bottom-1/3 h-px w-32 bg-gradient-to-r from-transparent via-[#BD99FE]/20 to-transparent md:w-64" />
+        <div className="absolute right-[10%] bottom-1/3 h-px w-32 bg-gradient-to-r from-transparent via-[#00C8E8]/20 to-transparent md:w-64" />
         <div className="absolute top-[20%] right-[20%] h-32 w-32 rounded-full bg-primary/[0.08] blur-[60px] dark:bg-primary/[0.06]" />
-        <div className="absolute bottom-[20%] left-[20%] h-32 w-32 rounded-full bg-[#BD99FE]/[0.08] blur-[60px] dark:bg-[#BD99FE]/[0.06]" />
+        <div className="absolute bottom-[20%] left-[20%] h-32 w-32 rounded-full bg-[#00C8E8]/[0.08] blur-[60px] dark:bg-[#00C8E8]/[0.06]" />
       </div>
 
       {/* Decorative geometric arcs & lines */}
@@ -35,7 +35,7 @@ export function VisionSection() {
         />
         {/* Bottom-right curved arc */}
         <div
-          className="absolute right-[5%] bottom-[10%] h-56 w-56 rounded-full border border-[#BD99FE]/[0.15] dark:border-[#BD99FE]/[0.12]"
+          className="absolute right-[5%] bottom-[10%] h-56 w-56 rounded-full border border-[#00C8E8]/[0.15] dark:border-[#00C8E8]/[0.12]"
           style={{
             borderLeftColor: "transparent",
             borderTopColor: "transparent",
@@ -44,7 +44,7 @@ export function VisionSection() {
         />
         {/* Diagonal accent line — top right */}
         <div
-          className="absolute top-[15%] right-[8%] h-px w-40 bg-gradient-to-r from-transparent via-[#969DFF]/25 to-transparent"
+          className="absolute top-[15%] right-[8%] h-px w-40 bg-gradient-to-r from-transparent via-[#2DB88A]/25 to-transparent"
           style={{ transform: "rotate(-25deg)" }}
         />
         {/* Diagonal accent line — bottom left */}
@@ -54,7 +54,7 @@ export function VisionSection() {
         />
         {/* Small arc near content center-left */}
         <div
-          className="absolute top-[45%] left-[3%] h-24 w-24 rounded-full border border-[#969DFF]/[0.12] dark:border-[#969DFF]/[0.10]"
+          className="absolute top-[45%] left-[3%] h-24 w-24 rounded-full border border-[#2DB88A]/[0.12] dark:border-[#2DB88A]/[0.10]"
           style={{
             borderRightColor: "transparent",
             borderTopColor: "transparent",
@@ -69,39 +69,39 @@ export function VisionSection() {
         className="pointer-events-none absolute inset-0 hidden md:block"
       >
         <div
-          className="absolute top-[15%] left-[12%] h-[3px] w-[3px] rounded-full bg-[#4893FC]/60"
+          className="absolute top-[15%] left-[12%] h-[3px] w-[3px] rounded-full bg-[#7CCF42]/60"
           style={{ animation: "float-particle 4s ease-in-out infinite" }}
         />
         <div
-          className="absolute top-[30%] right-[15%] h-[2px] w-[2px] rounded-full bg-[#969DFF]/50"
+          className="absolute top-[30%] right-[15%] h-[2px] w-[2px] rounded-full bg-[#2DB88A]/50"
           style={{
             animation: "float-particle 5s ease-in-out infinite",
             animationDelay: "1s",
           }}
         />
         <div
-          className="absolute bottom-[25%] left-[25%] h-[4px] w-[4px] rounded-full bg-[#BD99FE]/50"
+          className="absolute bottom-[25%] left-[25%] h-[4px] w-[4px] rounded-full bg-[#00C8E8]/50"
           style={{
             animation: "float-particle 6s ease-in-out infinite",
             animationDelay: "2s",
           }}
         />
         <div
-          className="absolute top-[60%] right-[22%] h-[2px] w-[2px] rounded-full bg-[#4893FC]/40"
+          className="absolute top-[60%] right-[22%] h-[2px] w-[2px] rounded-full bg-[#7CCF42]/40"
           style={{
             animation: "float-particle 4.5s ease-in-out infinite",
             animationDelay: "0.5s",
           }}
         />
         <div
-          className="absolute top-[45%] left-[8%] h-[3px] w-[3px] rounded-full bg-[#969DFF]/40"
+          className="absolute top-[45%] left-[8%] h-[3px] w-[3px] rounded-full bg-[#2DB88A]/40"
           style={{
             animation: "float-particle 5.5s ease-in-out infinite",
             animationDelay: "3s",
           }}
         />
         <div
-          className="absolute right-[10%] bottom-[35%] h-[3px] w-[3px] rounded-full bg-[#BD99FE]/60"
+          className="absolute right-[10%] bottom-[35%] h-[3px] w-[3px] rounded-full bg-[#00C8E8]/60"
           style={{
             animation: "float-particle 4s ease-in-out infinite",
             animationDelay: "1.5s",
@@ -134,10 +134,10 @@ export function VisionSection() {
           {/* Tagline */}
           <h2 className="font-bold text-4xl leading-tight tracking-tighter md:text-6xl">
             <span
-              className="bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE] bg-clip-text text-transparent"
+              className="bg-gradient-to-r from-[#7CCF42] via-[#2DB88A] to-[#00C8E8] bg-clip-text text-transparent"
               style={{
                 filter:
-                  "drop-shadow(0 0 40px rgba(150, 157, 255, 0.45)) drop-shadow(0 0 80px rgba(72, 147, 252, 0.25))",
+                  "drop-shadow(0 0 40px rgba(45, 184, 138, 0.45)) drop-shadow(0 0 80px rgba(124, 207, 66, 0.25))",
               }}
             >
               {t("tagline")}

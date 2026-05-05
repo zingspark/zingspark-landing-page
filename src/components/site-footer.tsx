@@ -13,7 +13,7 @@ export default function SiteFooter() {
         className="pointer-events-none absolute top-0 right-0 left-0 h-px"
         style={{
           background:
-            "linear-gradient(90deg, transparent 0%, #4893FC 20%, #969DFF 50%, #BD99FE 80%, transparent 100%)",
+            "linear-gradient(90deg, transparent 0%, #7CCF42 20%, #2DB88A 50%, #00C8E8 80%, transparent 100%)",
         }}
       />
       {/* Soft glow beneath the divider line */}
@@ -21,7 +21,7 @@ export default function SiteFooter() {
         className="pointer-events-none absolute top-0 right-0 left-0 h-8 opacity-50 dark:opacity-40"
         style={{
           background:
-            "linear-gradient(90deg, transparent 10%, #4893FC40 30%, #969DFF40 50%, #BD99FE40 70%, transparent 90%)",
+            "linear-gradient(90deg, transparent 10%, #7CCF4240 30%, #2DB88A40 50%, #00C8E840 70%, transparent 90%)",
           filter: "blur(12px)",
         }}
       />
@@ -43,13 +43,13 @@ export default function SiteFooter() {
             {/* Logo + brand name with hover glow */}
             <div className="group flex items-center gap-3 transition-all duration-200">
               <Image
-                src="/images/logo/zingspark_Icon_FullColor.svg"
+                src="/images/logo/logo-zingspark-color.png"
                 alt="Zingspark"
                 width={28}
                 height={28}
-                className="h-7 w-7 transition-[filter] duration-200 group-hover:drop-shadow-[0_0_8px_#4893FC80]"
+                className="h-7 w-7 transition-[filter] duration-200 group-hover:drop-shadow-[0_0_8px_#2DB88A80]"
               />
-              <span className="font-semibold text-sm tracking-tight transition-[text-shadow] duration-200 group-hover:[text-shadow:0_0_12px_#4893FC40]">
+              <span className="font-semibold text-sm tracking-tight transition-[text-shadow] duration-200 group-hover:[text-shadow:0_0_12px_#2DB88A40]">
                 {t("company")}
               </span>
             </div>
@@ -68,7 +68,7 @@ export default function SiteFooter() {
                 <span
                   className="pointer-events-none absolute bottom-0 left-0 h-px w-full origin-left scale-x-0 transition-transform duration-200 group-hover/email:scale-x-100"
                   style={{
-                    background: "linear-gradient(90deg, #4893FC, #BD99FE)",
+                    background: "linear-gradient(90deg, #7CCF42, #00C8E8)",
                   }}
                 />
               </span>
@@ -87,7 +87,7 @@ export default function SiteFooter() {
         </div>
 
         {/* Filing / 备案 */}
-        <div className="mt-8 flex flex-col items-center justify-center gap-2 border-border/20 border-t pt-6 text-muted-foreground/50 text-xs sm:flex-row sm:gap-4 dark:text-muted-foreground/40">
+        <div className="mt-8 flex items-center justify-center border-border/20 border-t pt-6 text-muted-foreground/50 text-xs dark:text-muted-foreground/40">
           <a
             href="https://beian.miit.gov.cn/"
             target="_blank"
@@ -96,8 +96,6 @@ export default function SiteFooter() {
           >
             {t("icp")}
           </a>
-          <span className="hidden sm:inline">·</span>
-          <span>{t("police")}</span>
         </div>
       </div>
     </footer>

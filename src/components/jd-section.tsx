@@ -31,15 +31,15 @@ export const jobIcons: Record<string, ReactNode> = {
 
 /* Unique gradient accents per job card for visual differentiation */
 const jobGradients: Record<string, string> = {
-  "agent-dev": "from-[#4893FC] to-[#969DFF]",
-  algorithm: "from-[#BD99FE] to-[#969DFF]",
-  architect: "from-[#4893FC] to-[#00B95C]",
-  hardware: "from-[#00B95C] to-[#4893FC]",
-  qa: "from-[#969DFF] to-[#4893FC]",
-  pr: "from-[#4893FC] to-[#BD99FE]",
-  pm: "from-[#BD99FE] to-[#4893FC]",
-  hr: "from-[#FC413D] to-[#BD99FE]",
-  design: "from-[#969DFF] to-[#BD99FE]",
+  "agent-dev": "from-[#7CCF42] to-[#2DB88A]",
+  algorithm: "from-[#00C8E8] to-[#2DB88A]",
+  architect: "from-[#7CCF42] to-[#00C8E8]",
+  hardware: "from-[#2DB88A] to-[#00C8E8]",
+  qa: "from-[#2DB88A] to-[#7CCF42]",
+  pr: "from-[#7CCF42] to-[#00C8E8]",
+  pm: "from-[#00C8E8] to-[#7CCF42]",
+  hr: "from-[#C5E040] to-[#2DB88A]",
+  design: "from-[#2DB88A] to-[#00C8E8]",
 };
 
 const containerVariants = {
@@ -89,7 +89,7 @@ export function JDSection() {
           className="mb-14 text-center md:mb-18"
         >
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border/50 bg-card/40 px-4 py-1.5 backdrop-blur-sm">
-            <div className="h-1 w-1 rounded-full bg-[#FC413D]" />
+            <div className="h-1 w-1 rounded-full bg-[#7CCF42]" />
             <span className="font-medium text-muted-foreground text-xs uppercase tracking-widest">
               Careers
             </span>
@@ -122,7 +122,7 @@ export function JDSection() {
                 className={`group relative cursor-pointer overflow-hidden rounded-xl border p-5 text-left transition-all duration-200 md:p-6 ${
                   isSelected
                     ? "border-transparent bg-primary/10 shadow-lg shadow-primary/15"
-                    : "border-border/70 bg-card/60 shadow-sm backdrop-blur-sm hover:border-primary/40 hover:bg-card/90 hover:shadow-[0_8px_30px_rgba(72,147,252,0.15)] dark:border-border/50 dark:shadow-none dark:hover:shadow-lg dark:hover:shadow-primary/10"
+                    : "border-border/70 bg-card/60 shadow-sm backdrop-blur-sm hover:border-primary/40 hover:bg-card/90 hover:shadow-[0_8px_30px_rgba(45,184,138,0.15)] dark:border-border/50 dark:shadow-none dark:hover:shadow-lg dark:hover:shadow-primary/10"
                 }`}
               >
                 {/* Animated gradient border for selected state */}
@@ -132,7 +132,7 @@ export function JDSection() {
                     style={{
                       padding: "1px",
                       background:
-                        "linear-gradient(135deg, #4893FC, #969DFF, #BD99FE, #4893FC)",
+                        "linear-gradient(135deg, #7CCF42, #2DB88A, #00C8E8, #7CCF42)",
                       backgroundSize: "300% 300%",
                       animation: "aurora 4s ease infinite",
                       WebkitMask:
@@ -150,7 +150,7 @@ export function JDSection() {
                     className="pointer-events-none absolute inset-0 rounded-xl"
                     style={{
                       boxShadow:
-                        "0 0 20px 4px oklch(0.62 0.18 255 / 0.2), 0 0 40px 8px oklch(0.68 0.17 290 / 0.1)",
+                        "0 0 20px 4px oklch(0.68 0.16 162 / 0.2), 0 0 40px 8px oklch(0.77 0.13 200 / 0.1)",
                       animation: "pulse-glow 2.5s ease-in-out infinite",
                     }}
                   />
@@ -158,7 +158,7 @@ export function JDSection() {
 
                 {/* Gradient corner accent */}
                 <div
-                  className={`pointer-events-none absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl ${jobGradients[job.key] ?? "from-[#4893FC] to-[#969DFF]"} rounded-bl-2xl transition-opacity duration-200 ${isSelected ? "opacity-25" : "opacity-10 group-hover:opacity-25"}`}
+                  className={`pointer-events-none absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl ${jobGradients[job.key] ?? "from-[#7CCF42] to-[#2DB88A]"} rounded-bl-2xl transition-opacity duration-200 ${isSelected ? "opacity-25" : "opacity-10 group-hover:opacity-25"}`}
                 />
 
                 {/* Hover glow — enhanced */}
@@ -238,9 +238,9 @@ export function JDSection() {
           />
           <defs>
             <linearGradient id="jd-chevron-grad" x1="2" y1="2" x2="18" y2="2">
-              <stop stopColor="#4893FC" />
-              <stop offset="0.5" stopColor="#969DFF" />
-              <stop offset="1" stopColor="#BD99FE" />
+              <stop stopColor="#7CCF42" />
+              <stop offset="0.5" stopColor="#2DB88A" />
+              <stop offset="1" stopColor="#00C8E8" />
             </linearGradient>
           </defs>
         </svg>

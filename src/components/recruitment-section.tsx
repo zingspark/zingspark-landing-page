@@ -101,7 +101,7 @@ export function RecruitmentSection() {
             </span>
           </div>
           <h2 className="font-bold text-4xl tracking-tighter md:text-6xl">
-            <span className="bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#7CCF42] via-[#2DB88A] to-[#00C8E8] bg-clip-text text-transparent">
               {t("title")}
             </span>
           </h2>
@@ -122,14 +122,14 @@ export function RecruitmentSection() {
         >
           <div className="glass-card-enhanced relative overflow-hidden rounded-2xl p-8 shadow-2xl shadow-primary/[0.03] md:p-12">
             {/* Decorative gradient overlay */}
-            <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/[0.04] via-transparent to-[#BD99FE]/[0.04]" />
+            <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/[0.04] via-transparent to-[#00C8E8]/[0.04]" />
             {/* Top accent line */}
             <div className="pointer-events-none absolute top-0 right-0 left-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
             {/* Bottom accent line */}
-            <div className="pointer-events-none absolute right-0 bottom-0 left-0 h-px bg-gradient-to-r from-transparent via-[#BD99FE]/20 to-transparent" />
+            <div className="pointer-events-none absolute right-0 bottom-0 left-0 h-px bg-gradient-to-r from-transparent via-[#00C8E8]/20 to-transparent" />
             {/* Corner glow accents */}
-            <div className="pointer-events-none absolute top-0 left-0 h-32 w-32 rounded-full bg-[radial-gradient(circle,oklch(0.62_0.18_255/0.06)_0%,transparent_70%)]" />
-            <div className="pointer-events-none absolute right-0 bottom-0 h-32 w-32 rounded-full bg-[radial-gradient(circle,oklch(0.68_0.17_290/0.06)_0%,transparent_70%)]" />
+            <div className="pointer-events-none absolute top-0 left-0 h-32 w-32 rounded-full bg-[radial-gradient(circle,oklch(0.78_0.18_130/0.06)_0%,transparent_70%)]" />
+            <div className="pointer-events-none absolute right-0 bottom-0 h-32 w-32 rounded-full bg-[radial-gradient(circle,oklch(0.77_0.13_200/0.06)_0%,transparent_70%)]" />
 
             <form onSubmit={handleSubmit} className="relative space-y-6">
               {/* Name + Email row */}
@@ -287,7 +287,7 @@ export function RecruitmentSection() {
               {/* Submit */}
               <button
                 type="submit"
-                className="group shimmer flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[length:200%_100%] bg-gradient-to-r bg-left from-[#4893FC] via-[#7B93FF] to-[#BD99FE] px-6 py-4 font-semibold text-white shadow-lg shadow-primary/35 transition-all duration-300 hover:bg-right hover:shadow-primary/45 hover:shadow-xl hover:brightness-110 active:scale-[0.98] dark:shadow-primary/20 dark:hover:shadow-primary/30"
+                className="group shimmer flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[length:200%_100%] bg-gradient-to-r bg-left from-[#7CCF42] via-[#2DB88A] to-[#00C8E8] px-6 py-4 font-semibold text-white shadow-lg shadow-primary/35 transition-all duration-300 hover:bg-right hover:shadow-primary/45 hover:shadow-xl hover:brightness-110 active:scale-[0.98] dark:shadow-primary/20 dark:hover:shadow-primary/30"
               >
                 <Icons.send className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:scale-110" />
                 {t("submit")}

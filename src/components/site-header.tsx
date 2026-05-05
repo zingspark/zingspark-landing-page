@@ -79,11 +79,12 @@ export default function SiteHeader() {
           {/* Logo */}
           <a href="#about" className="flex shrink-0 items-center gap-2.5">
             <Image
-              src="/images/logo/zingspark_Icon_FullColor.svg"
+              src="/images/logo/logo-zingspark-color.png"
               alt="Zingspark"
               width={32}
               height={32}
               className="h-7 w-7"
+              priority
             />
             <span className="hidden font-semibold text-sm tracking-tight sm:inline">
               Zingspark
@@ -109,7 +110,7 @@ export default function SiteHeader() {
                   {isActive && (
                     <motion.span
                       layoutId="nav-underline"
-                      className="pointer-events-none absolute right-1 bottom-0 left-1 h-0.5 rounded-full bg-gradient-to-r from-[#4893FC] via-[#969DFF] to-[#BD99FE]"
+                      className="pointer-events-none absolute right-1 bottom-0 left-1 h-0.5 rounded-full bg-gradient-to-r from-[#7CCF42] via-[#2DB88A] to-[#00C8E8]"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}

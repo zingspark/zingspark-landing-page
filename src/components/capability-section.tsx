@@ -62,22 +62,22 @@ const capabilityIcons = {
 
 const capabilityColors = {
   framework: {
-    gradient: "from-[#4893FC] to-[#7B93FF]",
-    glow: "#4893FC",
-    barFrom: "#a3c8fe",
-    barTo: "#4893FC",
+    gradient: "from-[#7CCF42] to-[#2DB88A]",
+    glow: "#7CCF42",
+    barFrom: "#b8e580",
+    barTo: "#7CCF42",
   },
   hardware: {
-    gradient: "from-[#00B95C] to-[#4893FC]",
-    glow: "#00B95C",
-    barFrom: "#66e0a3",
-    barTo: "#00B95C",
+    gradient: "from-[#2DB88A] to-[#00C8E8]",
+    glow: "#2DB88A",
+    barFrom: "#6eddb8",
+    barTo: "#2DB88A",
   },
   global: {
-    gradient: "from-[#BD99FE] to-[#969DFF]",
-    glow: "#BD99FE",
-    barFrom: "#dcc5ff",
-    barTo: "#BD99FE",
+    gradient: "from-[#00C8E8] to-[#2DB88A]",
+    glow: "#00C8E8",
+    barFrom: "#80e8f5",
+    barTo: "#00C8E8",
   },
 } as const;
 
@@ -118,7 +118,7 @@ export function CapabilitySection() {
           className="mb-16 text-center md:mb-20"
         >
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border/50 bg-card/40 px-4 py-1.5 backdrop-blur-sm">
-            <div className="h-1 w-1 rounded-full bg-[#00B95C]" />
+            <div className="h-1 w-1 rounded-full bg-[#2DB88A]" />
             <span className="font-medium text-muted-foreground text-xs uppercase tracking-widest">
               What We Do
             </span>
@@ -144,20 +144,20 @@ export function CapabilitySection() {
               style={{
                 transform: "translateX(-50%)",
                 background:
-                  "linear-gradient(90deg, transparent, #4893FC40 30%, #969DFF40 70%, transparent)",
+                  "linear-gradient(90deg, transparent, #7CCF4240 30%, #2DB88A40 70%, transparent)",
               }}
             />
-            <div className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-[33.33%] h-1.5 w-1.5 rounded-full border-[#969DFF30] border-[3px]" />
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-[33.33%] h-1.5 w-1.5 rounded-full border-[#2DB88A30] border-[3px]" />
             {/* Line from card 2 to card 3 */}
             <div
               className="absolute top-1/2 left-[66.66%] h-px w-[calc(33.33%-2rem)]"
               style={{
                 transform: "translateX(-50%)",
                 background:
-                  "linear-gradient(90deg, transparent, #969DFF40 30%, #BD99FE40 70%, transparent)",
+                  "linear-gradient(90deg, transparent, #2DB88A40 30%, #00C8E840 70%, transparent)",
               }}
             />
-            <div className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-[66.66%] h-1.5 w-1.5 rounded-full border-[#969DFF30] border-[3px]" />
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-[66.66%] h-1.5 w-1.5 rounded-full border-[#2DB88A30] border-[3px]" />
           </div>
           {capabilityKeys.map((key) => {
             const colors = capabilityColors[key];

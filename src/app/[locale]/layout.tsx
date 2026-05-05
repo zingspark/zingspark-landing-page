@@ -59,7 +59,7 @@ export async function generateMetadata({
       images: [siteConfig.openGraph.imageUrl],
     },
     robots: { index: true, follow: true },
-    icons: { icon: "/images/logo/zingspark_Icon_FullColor.svg" },
+    icons: { icon: "/images/logo/logo-zingspark-color.png" },
     verification: {
       other: {
         "baidu-site-verification": "codeva-hZZ8NHsjxf",

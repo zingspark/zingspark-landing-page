@@ -297,15 +297,11 @@ describe("Feature: visual-polish, Property 7: 品牌渐变色一致性", () => {
 
   // Brand color system — allowed hex colors (uppercase, 6-digit)
   const BRAND_COLORS = new Set([
-    "#4893FC", // primary blue
-    "#969DFF", // mid purple-blue
-    "#BD99FE", // purple
-    "#7B93FF", // intermediate blend (via color)
-    "#00B95C", // green (hardware capability)
-    "#FC413D", // red (accents)
-    "#FFE432", // yellow (accents)
-    "#FBBC04", // yellow variant (logo)
-    "#3186FF", // blue variant (logo)
+    "#7CCF42", // lime green (warm start)
+    "#2DB88A", // teal (primary mid)
+    "#00C8E8", // cyan (cool end)
+    "#40C078", // mid-green blend
+    "#C5E040", // yellow-green (logo accent)
   ]);
 
   /**

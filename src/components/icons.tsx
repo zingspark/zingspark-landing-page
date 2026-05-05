@@ -27,22 +27,22 @@ export const Icons = {
       <g mask="url(#zs-mask)">
         <rect width="65" height="65" fill="url(#zs-grad)" />
         <g filter="url(#zs-f0)">
-          <circle cx="5" cy="40" r="18" fill="#FFE432" />
+          <circle cx="5" cy="40" r="18" fill="#C5E040" />
         </g>
         <g filter="url(#zs-f1)">
-          <circle cx="30" cy="5" r="18" fill="#FC413D" />
+          <circle cx="30" cy="5" r="18" fill="#7CCF42" />
         </g>
         <g filter="url(#zs-f2)">
-          <circle cx="18" cy="60" r="22" fill="#00B95C" />
+          <circle cx="18" cy="60" r="22" fill="#00C8E8" />
         </g>
         <g filter="url(#zs-f3)">
-          <circle cx="55" cy="25" r="18" fill="#3186FF" />
+          <circle cx="55" cy="25" r="18" fill="#2DB88A" />
         </g>
         <g filter="url(#zs-f4)">
-          <circle cx="40" cy="42" r="16" fill="#3186FF" />
+          <circle cx="40" cy="42" r="16" fill="#00C8E8" />
         </g>
         <g filter="url(#zs-f5)">
-          <circle cx="-5" cy="22" r="18" fill="#FBBC04" />
+          <circle cx="-5" cy="22" r="18" fill="#7CCF42" />
         </g>
       </g>
       <defs>
@@ -54,10 +54,10 @@ export const Icons = {
           y2="15"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#4893FC" />
-          <stop offset=".27" stopColor="#4893FC" />
-          <stop offset=".777" stopColor="#969DFF" />
-          <stop offset="1" stopColor="#BD99FE" />
+          <stop stopColor="#7CCF42" />
+          <stop offset=".27" stopColor="#7CCF42" />
+          <stop offset=".777" stopColor="#2DB88A" />
+          <stop offset="1" stopColor="#00C8E8" />
         </linearGradient>
         <filter
           id="zs-f0"
